@@ -46,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
         settings.setGeolocationEnabled(false);
 
         // Para modo offline - cache agresivo
-        settings.setAppCacheEnabled(true);
-        settings.setAppCachePath(getCacheDir().getPath());
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
