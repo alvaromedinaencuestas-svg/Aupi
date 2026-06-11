@@ -954,8 +954,8 @@ checkOnline();
 
 // ===== INIT =====
 window.addEventListener('load',()=>{
-  initAupis();
-  setTimeout(()=>speak('¡Hola! ¡Soy Aupi! ¡Vamos a jugar y aprender juntos!'),500);
+  try { initAupis(); } catch(e) { console.log('aupi init error',e); }
+  setTimeout(()=>{ try { speak('¡Hola! ¡Soy Aupi!'); } catch(e){} },500);
 });
 </script>
 </body>
